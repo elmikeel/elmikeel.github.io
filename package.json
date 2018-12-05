@@ -2,7 +2,7 @@
   "name": "lol-matchups",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://patrykomiotek.github.io/",
+  "homepage": "https://elmikeel.github.io/",
   "dependencies": {
     "axios": "^0.18.0",
     "compression": "^1.7.3",
