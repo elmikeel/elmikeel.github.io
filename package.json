@@ -29,7 +29,7 @@
     "compile:sass:userPage": "node-sass --watch src/sass/UserPage.scss src/pages/user/UserPage.css",
     "dev": "concurrently --kill-others \"nodemon src/backend/server.js\" \"npm run compile:sass:userPage\" \"npm run compile:sass:loginPage\" \"npm run compile:sass:homePage\" \"npm run compile:sass:signupPage\" ",
     "predeploy": "npm run build",
-    "deploy": "gh pages -d build"
+    "deploy": "gh-pages -d build"
   },
   "engines": {
     "node": "8.12.0"
