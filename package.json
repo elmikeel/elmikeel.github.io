@@ -2,10 +2,12 @@
   "name": "lol-matchups",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://patrykomiotek.github.io/",
   "dependencies": {
     "axios": "^0.18.0",
     "compression": "^1.7.3",
     "concurrently": "^4.0.1",
+    "gh-pages": "^2.0.1",
     "helmet": "^3.15.0",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
@@ -25,7 +27,9 @@
     "compile:sass:loginPage": "node-sass --watch src/sass/LoginPage.scss src/pages/login/LoginPage.css",
     "compile:sass:signupPage": "node-sass --watch src/sass/SignupPage.scss src/pages/signup/SignupPage.css",
     "compile:sass:userPage": "node-sass --watch src/sass/UserPage.scss src/pages/user/UserPage.css",
-    "dev": "concurrently --kill-others \"nodemon src/backend/server.js\" \"npm run compile:sass:userPage\" \"npm run compile:sass:loginPage\" \"npm run compile:sass:homePage\" \"npm run compile:sass:signupPage\" "
+    "dev": "concurrently --kill-others \"nodemon src/backend/server.js\" \"npm run compile:sass:userPage\" \"npm run compile:sass:loginPage\" \"npm run compile:sass:homePage\" \"npm run compile:sass:signupPage\" ",
+    "predeploy": "npm run build",
+    "deploy": "gh pages -d build"
   },
   "engines": {
     "node": "8.12.0"
